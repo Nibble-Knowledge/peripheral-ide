@@ -1,0 +1,2 @@
+vhdl work "Reg_addr.vhd"
+vhdl work "reg_tb.vhd"

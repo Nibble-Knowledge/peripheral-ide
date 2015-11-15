@@ -1,0 +1,7 @@
+vhdl work "sixteen_bit_reg.vhd"
+vhdl work "shift_reg.vhd"
+vhdl work "Reg_addr.vhd"
+vhdl work "parity_check.vhd"
+vhdl work "edge_detector.vhd"
+vhdl work "control.vhd"
+vhdl work "write_circuit.vhd"

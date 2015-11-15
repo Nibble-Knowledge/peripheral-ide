@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb_isim_beh.exe -prj C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb_beh.prj work.read_tb 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" into library work
+Parsing VHDL file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" into library work
+Parsing VHDL file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" into library work
+Parsing VHDL file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" into library work
+Parsing VHDL file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 104976 KB
+Fuse CPU Usage: 1107 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity re_control [re_control_default]
+Compiling architecture behavioral of entity reg_read [reg_read_default]
+Compiling architecture behavioral of entity mux_out [mux_out_default]
+Compiling architecture behavioral of entity read_circuit [read_circuit_default]
+Compiling architecture behavior of entity read_tb
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb_isim_beh.exe
+Fuse Memory Usage: 113920 KB
+Fuse CPU Usage: 1357 ms

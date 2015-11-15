@@ -1,0 +1,9 @@
+[Inputs]
+clk
+reset
+enable
+s_in
+=parallel_in[3:0]=
+[Outputs]
+s_out
+[BiDir]

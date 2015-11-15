@@ -1,0 +1,2 @@
+xst -intstyle ise -filter "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/iseconfig/filter.filter" -ifn "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.xst" -ofn "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.syr" 
+xst -intstyle ise -filter "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/iseconfig/filter.filter" -ifn "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.xst" -ofn "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.syr" 

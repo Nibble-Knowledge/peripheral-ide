@@ -1,0 +1,51 @@
+V3 27
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" 2015/11/12.10:11:46 P.20131013
+EN work/control 1447447363 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/control/Behavioral 1447447364 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" \
+      EN work/control 1447447363
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" 2015/11/11.20:21:06 P.20131013
+EN work/edge_detector 1447447359 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/edge_detector/Behavioral 1447447360 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" \
+      EN work/edge_detector 1447447359
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" 2015/11/11.11:04:32 P.20131013
+EN work/parity_check 1447447357 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/parity_check/Behavioral 1447447358 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" \
+      EN work/parity_check 1447447357
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" 2015/11/11.22:16:27 P.20131013
+EN work/Reg_addr 1447447365 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Reg_addr/Behavioral 1447447366 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" \
+      EN work/Reg_addr 1447447365
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" 2015/11/12.14:18:36 P.20131013
+EN work/SHIFT_REGISTER 1447447361 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SHIFT_REGISTER/Behavioral 1447447362 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" \
+      EN work/SHIFT_REGISTER 1447447361
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" 2015/11/11.22:16:27 P.20131013
+EN work/sixteen_bit_reg 1447447367 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/sixteen_bit_reg/Behavioral 1447447368 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" \
+      EN work/sixteen_bit_reg 1447447367
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" 2015/11/12.14:34:08 P.20131013
+EN work/write_circuit 1447447369 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/write_circuit/Behavioral 1447447370 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" \
+      EN work/write_circuit 1447447369 CP parity_check CP edge_detector \
+      CP SHIFT_REGISTER CP control CP Reg_addr CP sixteen_bit_reg

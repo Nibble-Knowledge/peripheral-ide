@@ -1,0 +1,7 @@
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\sixteen_bit_reg.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\shift_reg.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\Reg_addr.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\parity_check.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\edge_detector.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\control.vhd"
+vhdl work "C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\write_circuit.vhd"

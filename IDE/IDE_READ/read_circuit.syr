@@ -1,0 +1,438 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Reading design: read_circuit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "read_circuit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "read_circuit"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-vq100
+
+---- Source Options
+Top Module Name                    : read_circuit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" in Library work.
+Entity <re_control> compiled.
+Entity <re_control> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" in Library work.
+Architecture behavioral of Entity reg_read is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" in Library work.
+Architecture behavioral of Entity mux_out is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" in Library work.
+Architecture behavioral of Entity read_circuit is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <read_circuit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <re_control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_read> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_out> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <read_circuit> in library <work> (Architecture <behavioral>).
+Entity <read_circuit> analyzed. Unit <read_circuit> generated.
+
+Analyzing Entity <re_control> in library <work> (Architecture <behavioral>).
+Entity <re_control> analyzed. Unit <re_control> generated.
+
+Analyzing Entity <reg_read> in library <work> (Architecture <behavioral>).
+Entity <reg_read> analyzed. Unit <reg_read> generated.
+
+Analyzing Entity <mux_out> in library <work> (Architecture <behavioral>).
+Entity <mux_out> analyzed. Unit <mux_out> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <re_control>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd".
+    Found finite state machine <FSM_0> for signal <cState>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | c_clk                     (rising_edge)        |
+    | Reset              | c_rst                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <re_control> synthesized.
+
+
+Synthesizing Unit <reg_read>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd".
+    Found 16-bit register for signal <re_reg_out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <reg_read> synthesized.
+
+
+Synthesizing Unit <mux_out>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd".
+    Found 4-bit tristate buffer for signal <mux_out>.
+    Summary:
+	inferred   4 Tristate(s).
+Unit <mux_out> synthesized.
+
+
+Synthesizing Unit <read_circuit>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd".
+Unit <read_circuit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 16-bit register                                       : 1
+# Tristates                                            : 1
+ 4-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <re_cntrl/cState/FSM> on signal <cState[1:9]> with one-hot encoding.
+---------------------
+ State  | Encoding
+---------------------
+ idle   | 000000001
+ hold   | 000000010
+ hold1  | 000000100
+ read0  | 000001000
+ read1  | 000010000
+ read2  | 000100000
+ read3  | 001000000
+ read4  | 010000000
+ finish | 100000000
+---------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <read_circuit> ...
+
+Optimizing unit <reg_read> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block read_circuit, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : read_circuit.ngr
+Top Level Output File Name         : read_circuit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 31
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 6
+#      LUT3_L                      : 1
+#      LUT4                        : 14
+#      MUXF5                       : 8
+# FlipFlops/Latches                : 25
+#      FDC                         : 8
+#      FDCE                        : 16
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 20
+#      OBUF                        : 2
+#      OBUFT                       : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-4 
+
+ Number of Slices:                       23  out of   2448     0%  
+ Number of Slice Flip Flops:             25  out of   4896     0%  
+ Number of 4 input LUTs:                 23  out of   4896     0%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of     66    40%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 25    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.977ns (Maximum Frequency: 335.909MHz)
+   Minimum input arrival time before clock: 3.660ns
+   Maximum output required time after clock: 7.916ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.977ns (frequency: 335.909MHz)
+  Total number of paths / destination ports: 27 / 25
+-------------------------------------------------------------------------
+Delay:               2.977ns (Levels of Logic = 2)
+  Source:            re_cntrl/cState_FSM_FFd9 (FF)
+  Destination:       re_cntrl/cState_FSM_FFd9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: re_cntrl/cState_FSM_FFd9 to re_cntrl/cState_FSM_FFd9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              3   0.591   0.566  re_cntrl/cState_FSM_FFd9 (re_cntrl/cState_FSM_FFd9)
+     LUT3_L:I2->LO         1   0.704   0.104  re_cntrl/cState_FSM_FFd9-In_SW0_SW0 (N2)
+     LUT4:I3->O            1   0.704   0.000  re_cntrl/cState_FSM_FFd9-In (re_cntrl/cState_FSM_FFd9-In)
+     FDP:D                     0.308          re_cntrl/cState_FSM_FFd9
+    ----------------------------------------
+    Total                      2.977ns (2.307ns logic, 0.670ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 22 / 19
+-------------------------------------------------------------------------
+Offset:              3.660ns (Levels of Logic = 3)
+  Source:            pa (PAD)
+  Destination:       re_cntrl/cState_FSM_FFd9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pa to re_cntrl/cState_FSM_FFd9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  pa_IBUF (pa_IBUF)
+     LUT3_L:I0->LO         1   0.704   0.104  re_cntrl/cState_FSM_FFd9-In_SW0_SW0 (N2)
+     LUT4:I3->O            1   0.704   0.000  re_cntrl/cState_FSM_FFd9-In (re_cntrl/cState_FSM_FFd9-In)
+     FDP:D                     0.308          re_cntrl/cState_FSM_FFd9
+    ----------------------------------------
+    Total                      3.660ns (2.934ns logic, 0.726ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 116 / 6
+-------------------------------------------------------------------------
+Offset:              7.916ns (Levels of Logic = 5)
+  Source:            re_cntrl/cState_FSM_FFd5 (FF)
+  Destination:       data_out_cpu<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: re_cntrl/cState_FSM_FFd5 to data_out_cpu<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.591   1.057  re_cntrl/cState_FSM_FFd5 (re_cntrl/cState_FSM_FFd5)
+     LUT4:I0->O            1   0.704   0.000  mux_rd/mux_out_mux0000<15>190_SW0_F (N12)
+     MUXF5:I0->O           2   0.321   0.526  mux_rd/mux_out_mux0000<15>190_SW0 (N4)
+     LUT3:I1->O            1   0.704   0.000  mux_rd/mux_out_mux0000<15>1902 (mux_rd/mux_out_mux0000<15>1901)
+     MUXF5:I0->O           1   0.321   0.420  mux_rd/mux_out_mux0000<15>190_f5 (data_out_cpu_3_OBUFT)
+     OBUFT:I->O                3.272          data_out_cpu_3_OBUFT (data_out_cpu<3>)
+    ----------------------------------------
+    Total                      7.916ns (5.913ns logic, 2.003ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.22 secs
+ 
+--> 
+
+Total memory usage is 211340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

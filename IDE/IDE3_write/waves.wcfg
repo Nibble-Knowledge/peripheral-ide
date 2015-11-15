@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="write_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/write_tb/wr_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_clk</obj_property>
+      <obj_property name="ObjectShortName">wr_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_reset</obj_property>
+      <obj_property name="ObjectShortName">wr_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_pa" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_pa</obj_property>
+      <obj_property name="ObjectShortName">wr_pa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_cs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_cs</obj_property>
+      <obj_property name="ObjectShortName">wr_cs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_cpu_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_cpu_wr</obj_property>
+      <obj_property name="ObjectShortName">wr_cpu_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_data_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_ready</obj_property>
+      <obj_property name="ObjectShortName">wr_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/iow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iow</obj_property>
+      <obj_property name="ObjectShortName">iow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/wr_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_clk_period</obj_property>
+      <obj_property name="ObjectShortName">wr_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/uut/U3/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[15:0]</obj_property>
+      <obj_property name="ObjectShortName">output[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/uut/ADRR_OUT/re_reg_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">re_reg_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">re_reg_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/uut/ADRR_OUT/re_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">re_reg_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">re_reg_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/uut/DATA_OUT/re_reg_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">re_reg_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">re_reg_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/write_tb/uut/DATA_OUT/re_reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">re_reg_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">re_reg_out[15:0]</obj_property>
+   </wvobject>
+</wave_config>

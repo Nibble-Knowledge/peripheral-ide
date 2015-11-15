@@ -1,0 +1,16 @@
+AR sixteen_bit_reg behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" sub00/vhpl15 1447447368
+EN edge_detector NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" sub00/vhpl07 1447447359
+AR shift_reg behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" sub00/vhpl03 1447221048
+AR control behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" sub00/vhpl11 1447447364
+AR edge_detector behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" sub00/vhpl08 1447447360
+AR reg_addr behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" sub00/vhpl13 1447447366
+EN write_circuit NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" sub00/vhpl06 1447447369
+EN shift_register NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" sub00/vhpl04 1447447361
+AR write_circuit behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" sub00/vhpl09 1447447370
+EN sixteen_bit_reg NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" sub00/vhpl14 1447447367
+EN reg_addr NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" sub00/vhpl12 1447447365
+EN parity_check NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" sub00/vhpl00 1447447357
+EN shift_reg NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" sub00/vhpl02 1447221047
+EN control NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" sub00/vhpl10 1447447363
+AR shift_register behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" sub00/vhpl05 1447447362
+AR parity_check behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" sub00/vhpl01 1447447358

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb_isim_beh.exe" -prj "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_tb_beh.prj" "work.read_tb" 

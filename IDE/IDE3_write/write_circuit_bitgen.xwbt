@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\write_circuit.ncd
+OUTFILE=C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final\write_circuit.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4vq100
+WORKINGDIR=C:\Users\Gham\Desktop\Actual files\IDE\IDE3_final\IDE3_final
+LICENSE=WebPack
+USER_INFO=211099804_0_0_671

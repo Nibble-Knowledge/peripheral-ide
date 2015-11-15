@@ -1,0 +1,29 @@
+V3 15
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" 2015/11/13.13:01:37 P.20131013
+EN work/mux_out 1447446510 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux_out/Behavioral 1447446511 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" \
+      EN work/mux_out 1447446510
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" 2015/11/13.13:02:15 P.20131013
+EN work/read_circuit 1447446512 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/read_circuit/Behavioral 1447446513 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" \
+      EN work/read_circuit 1447446512 CP re_control CP reg_read CP mux_out
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" 2015/11/12.16:24:44 P.20131013
+EN work/reg_read 1447446508 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg_read/Behavioral 1447446509 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" \
+      EN work/reg_read 1447446508
+FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" 2015/11/13.13:25:54 P.20131013
+EN work/re_control 1447446506 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/re_control/Behavioral 1447446507 \
+      FL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" \
+      EN work/re_control 1447446506

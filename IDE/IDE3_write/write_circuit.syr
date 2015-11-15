@@ -1,0 +1,494 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.64 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.64 secs
+ 
+--> Reading design: write_circuit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "write_circuit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "write_circuit"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-vq100
+
+---- Source Options
+Top Module Name                    : write_circuit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd" in Library work.
+Architecture behavioral of Entity parity_check is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd" in Library work.
+Architecture behavioral of Entity edge_detector is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd" in Library work.
+Architecture behavioral of Entity shift_register is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd" in Library work.
+Architecture behavioral of Entity reg_addr is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd" in Library work.
+Architecture behavioral of Entity sixteen_bit_reg is up to date.
+Compiling vhdl file "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd" in Library work.
+Architecture behavioral of Entity write_circuit is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <write_circuit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <parity_check> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <edge_detector> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SHIFT_REGISTER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg_addr> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sixteen_bit_reg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <write_circuit> in library <work> (Architecture <behavioral>).
+Entity <write_circuit> analyzed. Unit <write_circuit> generated.
+
+Analyzing Entity <parity_check> in library <work> (Architecture <behavioral>).
+Entity <parity_check> analyzed. Unit <parity_check> generated.
+
+Analyzing Entity <edge_detector> in library <work> (Architecture <behavioral>).
+Entity <edge_detector> analyzed. Unit <edge_detector> generated.
+
+Analyzing Entity <SHIFT_REGISTER> in library <work> (Architecture <behavioral>).
+Entity <SHIFT_REGISTER> analyzed. Unit <SHIFT_REGISTER> generated.
+
+Analyzing Entity <control> in library <work> (Architecture <behavioral>).
+Entity <control> analyzed. Unit <control> generated.
+
+Analyzing Entity <Reg_addr> in library <work> (Architecture <behavioral>).
+Entity <Reg_addr> analyzed. Unit <Reg_addr> generated.
+
+Analyzing Entity <sixteen_bit_reg> in library <work> (Architecture <behavioral>).
+Entity <sixteen_bit_reg> analyzed. Unit <sixteen_bit_reg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <parity_check>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/parity_check.vhd".
+Unit <parity_check> synthesized.
+
+
+Synthesizing Unit <edge_detector>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/edge_detector.vhd".
+    Found 1-bit register for signal <signal_d>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <edge_detector> synthesized.
+
+
+Synthesizing Unit <SHIFT_REGISTER>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/shift_reg.vhd".
+    Found 16-bit register for signal <reg>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <SHIFT_REGISTER> synthesized.
+
+
+Synthesizing Unit <control>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/control.vhd".
+INFO:Xst:1799 - State write_data2 is never reached in FSM <cState>.
+    Found finite state machine <FSM_0> for signal <cState>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | c_clk                     (rising_edge)        |
+    | Reset              | c_rst                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <control> synthesized.
+
+
+Synthesizing Unit <Reg_addr>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/Reg_addr.vhd".
+    Found 5-bit register for signal <Re_reg_out>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <Reg_addr> synthesized.
+
+
+Synthesizing Unit <sixteen_bit_reg>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/sixteen_bit_reg.vhd".
+    Found 16-bit register for signal <s_reg_out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <sixteen_bit_reg> synthesized.
+
+
+Synthesizing Unit <write_circuit>.
+    Related source file is "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE3_final/write_circuit.vhd".
+Unit <write_circuit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 16-bit register                                       : 2
+ 5-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U4/cState/FSM> on signal <cState[1:8]> with one-hot encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 00000001
+ hold0       | 00000010
+ load_addr   | 00000100
+ hold1       | 00001000
+ strobe      | 00010000
+ hold2       | 00100000
+ hold3       | 01000000
+ write_data  | 10000000
+ write_data2 | unreached
+-------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <write_circuit> ...
+
+Optimizing unit <SHIFT_REGISTER> ...
+
+Optimizing unit <sixteen_bit_reg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block write_circuit, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : write_circuit.ngr
+Top Level Output File Name         : write_circuit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 6
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 3
+# FlipFlops/Latches                : 46
+#      FD                          : 1
+#      FDC                         : 7
+#      FDCE                        : 37
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 8
+#      OBUF                        : 23
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-4 
+
+ Number of Slices:                       26  out of   2448     1%  
+ Number of Slice Flip Flops:             46  out of   4896     0%  
+ Number of 4 input LUTs:                  6  out of   4896     0%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of     66    48%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+wr_clk                             | BUFGP                  | 46    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+wr_reset                           | IBUF                   | 45    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.325ns (Maximum Frequency: 300.752MHz)
+   Minimum input arrival time before clock: 4.290ns
+   Maximum output required time after clock: 6.042ns
+   Maximum combinational path delay: 7.007ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'wr_clk'
+  Clock period: 3.325ns (frequency: 300.752MHz)
+  Total number of paths / destination ports: 79 / 78
+-------------------------------------------------------------------------
+Delay:               3.325ns (Levels of Logic = 1)
+  Source:            U2/signal_d (FF)
+  Destination:       U3/reg_15 (FF)
+  Source Clock:      wr_clk rising
+  Destination Clock: wr_clk rising
+
+  Data Path: U2/signal_d to U3/reg_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.424  U2/signal_d (U2/signal_d)
+     LUT4:I3->O           17   0.704   1.051  U2/w_ready21 (w_ready_s)
+     FDCE:CE                   0.555          U3/reg_0
+    ----------------------------------------
+    Total                      3.325ns (1.850ns logic, 1.475ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'wr_clk'
+  Total number of paths / destination ports: 61 / 23
+-------------------------------------------------------------------------
+Offset:              4.290ns (Levels of Logic = 2)
+  Source:            wr_cs (PAD)
+  Destination:       U3/reg_15 (FF)
+  Destination Clock: wr_clk rising
+
+  Data Path: wr_cs to U3/reg_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  wr_cs_IBUF (wr_cs_IBUF)
+     LUT4:I0->O           17   0.704   1.051  U2/w_ready21 (w_ready_s)
+     FDCE:CE                   0.555          U3/reg_0
+    ----------------------------------------
+    Total                      4.290ns (2.477ns logic, 1.813ns route)
+                                       (57.7% logic, 42.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wr_clk'
+  Total number of paths / destination ports: 23 / 23
+-------------------------------------------------------------------------
+Offset:              6.042ns (Levels of Logic = 2)
+  Source:            U2/signal_d (FF)
+  Destination:       wr_ready (PAD)
+  Source Clock:      wr_clk rising
+
+  Data Path: U2/signal_d to wr_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.424  U2/signal_d (U2/signal_d)
+     LUT4:I3->O           17   0.704   1.051  U2/w_ready21 (w_ready_s)
+     OBUF:I->O                 3.272          wr_ready_OBUF (wr_ready)
+    ----------------------------------------
+    Total                      6.042ns (4.567ns logic, 1.475ns route)
+                                       (75.6% logic, 24.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Delay:               7.007ns (Levels of Logic = 3)
+  Source:            wr_cs (PAD)
+  Destination:       wr_ready (PAD)
+
+  Data Path: wr_cs to wr_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  wr_cs_IBUF (wr_cs_IBUF)
+     LUT4:I0->O           17   0.704   1.051  U2/w_ready21 (w_ready_s)
+     OBUF:I->O                 3.272          wr_ready_OBUF (wr_ready)
+    ----------------------------------------
+    Total                      7.007ns (5.194ns logic, 1.813ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.71 secs
+ 
+--> 
+
+Total memory usage is 204492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

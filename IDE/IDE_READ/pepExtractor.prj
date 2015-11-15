@@ -1,0 +1,4 @@
+work	"mux_out.vhd"
+work	"re_control.vhd"
+work	"read_circuit.vhd"
+work	"reg_read.vhd"

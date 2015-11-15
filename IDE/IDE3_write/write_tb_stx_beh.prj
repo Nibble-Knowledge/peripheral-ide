@@ -1,0 +1,8 @@
+vhdl isim_temp "sixteen_bit_reg.vhd"
+vhdl isim_temp "shift_reg.vhd"
+vhdl isim_temp "Reg_addr.vhd"
+vhdl isim_temp "parity_check.vhd"
+vhdl isim_temp "edge_detector.vhd"
+vhdl isim_temp "control.vhd"
+vhdl isim_temp "write_circuit.vhd"
+vhdl isim_temp "write_tb.vhd"

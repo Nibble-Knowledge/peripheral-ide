@@ -1,0 +1,5 @@
+vhdl work "re_control.vhd"
+vhdl work "reg_read.vhd"
+vhdl work "mux_out.vhd"
+vhdl work "read_circuit.vhd"
+vhdl work "read_tb.vhd"

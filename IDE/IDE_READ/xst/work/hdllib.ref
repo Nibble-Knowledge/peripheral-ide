@@ -1,0 +1,8 @@
+AR read_circuit behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" sub00/vhpl07 1447446513
+EN mux_out NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" sub00/vhpl04 1447446510
+EN reg_read NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" sub00/vhpl00 1447446508
+AR re_control behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" sub00/vhpl03 1447446507
+AR mux_out behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/mux_out.vhd" sub00/vhpl05 1447446511
+EN re_control NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/re_control.vhd" sub00/vhpl02 1447446506
+EN read_circuit NULL "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/read_circuit.vhd" sub00/vhpl06 1447446512
+AR reg_read behavioral "C:/Users/Gham/Desktop/Actual files/IDE/IDE3_final/IDE_READ/reg_read.vhd" sub00/vhpl01 1447446509
