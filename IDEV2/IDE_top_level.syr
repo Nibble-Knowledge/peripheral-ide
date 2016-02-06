@@ -1,0 +1,430 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: IDE_top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IDE_top_level.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IDE_top_level"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-vq100
+
+---- Source Options
+Top Module Name                    : IDE_top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.vhd" in Library work.
+Entity <ide_control_unit> compiled.
+Entity <ide_control_unit> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Bailey/Documents/IDE V2/IDEV2/Reg.vhd" in Library work.
+Architecture behavioral of Entity reg is up to date.
+Compiling vhdl file "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.vhd" in Library work.
+Architecture behavioral of Entity ide_top_level is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <IDE_top_level> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <IDE_control_unit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <IDE_top_level> in library <work> (Architecture <behavioral>).
+Entity <IDE_top_level> analyzed. Unit <IDE_top_level> generated.
+
+Analyzing Entity <IDE_control_unit> in library <work> (Architecture <behavioral>).
+Entity <IDE_control_unit> analyzed. Unit <IDE_control_unit> generated.
+
+Analyzing Entity <Reg> in library <work> (Architecture <behavioral>).
+Entity <Reg> analyzed. Unit <Reg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <IDE_control_unit>.
+    Related source file is "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.vhd".
+    Found 2-bit register for signal <wr_prev>.
+    Found 3-bit register for signal <cycle_counter>.
+    Found 3-bit adder for signal <cycle_counter$addsub0000> created at line 67.
+    Found 1-bit register for signal <i_ready>.
+    Found 1-bit register for signal <prev_R>.
+    Found 1-bit register for signal <prev_W>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <IDE_control_unit> synthesized.
+
+
+Synthesizing Unit <Reg>.
+    Related source file is "C:/Users/Bailey/Documents/IDE V2/IDEV2/Reg.vhd".
+    Found 4-bit register for signal <data_out>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <Reg> synthesized.
+
+
+Synthesizing Unit <IDE_top_level>.
+    Related source file is "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.vhd".
+    Found 4-bit tristate buffer for signal <CPU_data>.
+    Found 8-bit tristate buffer for signal <HD_data>.
+    Summary:
+	inferred  12 Tristate(s).
+Unit <IDE_top_level> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 3
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+# Tristates                                            : 2
+ 4-bit tristate buffer                                 : 1
+ 8-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <IDE_top_level> ...
+
+Optimizing unit <IDE_control_unit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IDE_top_level, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : IDE_top_level.ngr
+Top Level Output File Name         : IDE_top_level
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 25
+#      INV                         : 3
+#      LUT2                        : 3
+#      LUT3                        : 8
+#      LUT4                        : 9
+#      MUXF5                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 20
+#      FDCE                        : 15
+#      FDE                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 4
+#      IOBUF                       : 12
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-5 
+
+ Number of Slices:                       13  out of   2448     0%  
+ Number of Slice Flip Flops:             20  out of   4896     0%  
+ Number of 4 input LUTs:                 23  out of   4896     0%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of     66    45%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+------------------------+-------+
+Control Signal                           | Buffer(FF name)        | Load  |
+-----------------------------------------+------------------------+-------+
+CONTROL_not0000(CONTROL_not00001_INV_0:O)| NONE(CMD/data_out_0)   | 15    |
+-----------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.885ns (Maximum Frequency: 257.377MHz)
+   Minimum input arrival time before clock: 4.560ns
+   Maximum output required time after clock: 6.860ns
+   Maximum combinational path delay: 6.146ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.885ns (frequency: 257.377MHz)
+  Total number of paths / destination ports: 62 / 22
+-------------------------------------------------------------------------
+Delay:               3.885ns (Levels of Logic = 3)
+  Source:            CONTROL/prev_R (FF)
+  Destination:       CONTROL/i_ready (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: CONTROL/prev_R to CONTROL/i_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.514   0.520  CONTROL/prev_R (CONTROL/prev_R)
+     LUT2:I1->O            1   0.612   0.509  CONTROL/i_ready_not00012 (CONTROL/i_ready_not00012)
+     LUT4:I0->O            1   0.612   0.000  CONTROL/i_ready_not000145_G (N25)
+     MUXF5:I1->O           1   0.278   0.357  CONTROL/i_ready_not000145 (CONTROL/i_ready_not0001)
+     FDE:CE                    0.483          CONTROL/i_ready
+    ----------------------------------------
+    Total                      3.885ns (2.499ns logic, 1.386ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 46 / 35
+-------------------------------------------------------------------------
+Offset:              4.560ns (Levels of Logic = 4)
+  Source:            R (PAD)
+  Destination:       CONTROL/i_ready (FF)
+  Destination Clock: clk rising
+
+  Data Path: R to CONTROL/i_ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  R_IBUF (R_IBUF)
+     LUT2:I0->O            1   0.612   0.509  CONTROL/i_ready_not00012 (CONTROL/i_ready_not00012)
+     LUT4:I0->O            1   0.612   0.000  CONTROL/i_ready_not000145_G (N25)
+     MUXF5:I1->O           1   0.278   0.357  CONTROL/i_ready_not000145 (CONTROL/i_ready_not0001)
+     FDE:CE                    0.483          CONTROL/i_ready
+    ----------------------------------------
+    Total                      4.560ns (3.091ns logic, 1.469ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 91 / 24
+-------------------------------------------------------------------------
+Offset:              6.860ns (Levels of Logic = 3)
+  Source:            CONTROL/cycle_counter_2 (FF)
+  Destination:       CPU_data<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: CONTROL/cycle_counter_2 to CPU_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.945  CONTROL/cycle_counter_2 (CONTROL/cycle_counter_2)
+     LUT3:I0->O            4   0.612   0.651  CONTROL/w_select1 (i_data_s)
+     LUT3:I0->O            1   0.612   0.357  i_CPU_data_out<3>1 (i_CPU_data_out<3>)
+     IOBUF:I->IO               3.169          CPU_data_3_IOBUF (CPU_data<3>)
+    ----------------------------------------
+    Total                      6.860ns (4.907ns logic, 1.953ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Delay:               6.146ns (Levels of Logic = 3)
+  Source:            CS (PAD)
+  Destination:       out_enables<2> (PAD)
+
+  Data Path: CS to out_enables<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  CS_IBUF (CS_IBUF)
+     LUT4:I0->O            5   0.612   0.538  i_enables_cs<2>1 (out_enables_2_OBUF)
+     OBUF:I->O                 3.169          out_enables_2_OBUF (out_enables<2>)
+    ----------------------------------------
+    Total                      6.146ns (4.887ns logic, 1.259ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.15 secs
+ 
+--> 
+
+Total memory usage is 311072 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

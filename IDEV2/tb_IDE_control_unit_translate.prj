@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/IDE_control_unit_translate.vhd"
+vhdl work "tb_IDE_control_unit.vhd"

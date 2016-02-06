@@ -1,0 +1,6 @@
+AR ide_top_level behavioral "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.vhd" sub00/vhpl05 1450321978
+AR reg behavioral "C:/Users/Bailey/Documents/IDE V2/IDEV2/Reg.vhd" sub00/vhpl03 1450321976
+EN ide_control_unit NULL "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.vhd" sub00/vhpl00 1450321973
+EN ide_top_level NULL "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.vhd" sub00/vhpl04 1450321977
+AR ide_control_unit behavioral "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.vhd" sub00/vhpl01 1450321974
+EN reg NULL "C:/Users/Bailey/Documents/IDE V2/IDEV2/Reg.vhd" sub00/vhpl02 1450321975

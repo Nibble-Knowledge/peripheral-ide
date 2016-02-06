@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 "IDE_control_unit.ngc" IDE_control_unit.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm IDE_control_unit -w -dir netgen/translate -ofmt vhdl -sim IDE_control_unit.ngd IDE_control_unit_translate.vhd 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_control_unit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s250e-vq100-5 "IDE_control_unit.ngc" IDE_control_unit.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm IDE_control_unit -w -dir netgen/translate -ofmt vhdl -sim IDE_control_unit.ngd IDE_control_unit_translate.vhd 

@@ -1,0 +1,4 @@
+vhdl work "Reg.vhd"
+vhdl work "IDE_control_unit.vhd"
+vhdl work "IDE_top_level.vhd"
+vhdl work "tb_IDE_top_level.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Bailey/Documents/IDE V2/IDEV2/tb_IDE_top_level_isim_beh.exe" -prj "C:/Users/Bailey/Documents/IDE V2/IDEV2/tb_IDE_top_level_beh.prj" "work.tb_IDE_top_level" 

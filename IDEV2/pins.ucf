@@ -1,0 +1,36 @@
+NET "clk"	LOC = "P89";
+NET "reset" LOC = "P22";
+
+NET "W"	LOC = "P91";
+NET "R" LOC = "P92";
+NET "Re" LOC = "P94";
+NET "CS" LOC = "P95";
+
+NET "CPU_data(0)" LOC = "P12";
+NET "CPU_data(1)" LOC = "P15";
+NET "CPU_data(2)" LOC = "P16";
+NET "CPU_data(3)" LOC = "P17";
+
+NET "HD_data(7)" LOC = "P57";
+NET "HD_data(6)" LOC = "P53";
+NET "HD_data(5)" LOC = "P40";
+NET "HD_data(4)" LOC = "P35";
+NET "HD_data(3)" LOC = "P33";
+NET "HD_data(2)" LOC = "P26";
+NET "HD_data(1)" LOC = "P23";
+NET "HD_data(0)" LOC = "P18";
+
+NET "CS1FX" LOC = "P68";
+NET "CS3FX" LOC = "P66";
+
+NET "DA(0)" LOC = "P58";
+NET "DA(1)" LOC = "P54";
+NET "DA(2)" LOC = "P41";
+
+NET "DIOR" LOC = "P2";
+NET "DIOW" LOC = "P3";
+
+NET "out_enables(0)" LOC = "P5";
+NET "out_enables(1)" LOC = "P9";
+NET "out_enables(2)" LOC = "P10";
+

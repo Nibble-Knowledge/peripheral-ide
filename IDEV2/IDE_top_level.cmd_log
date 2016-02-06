@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s250e-vq100-5 "IDE_top_level.ngc" IDE_top_level.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o IDE_top_level_map.ncd IDE_top_level.ngd IDE_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 IDE_top_level_map.ncd IDE_top_level.ncd IDE_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IDE_top_level.twx IDE_top_level.ncd -o IDE_top_level.twr IDE_top_level.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f IDE_top_level.ut IDE_top_level.ncd 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s250e-vq100-5 "IDE_top_level.ngc" IDE_top_level.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o IDE_top_level_map.ncd IDE_top_level.ngd IDE_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 IDE_top_level_map.ncd IDE_top_level.ncd IDE_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IDE_top_level.twx IDE_top_level.ncd -o IDE_top_level.twr IDE_top_level.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f IDE_top_level.ut IDE_top_level.ncd 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s250e-vq100-5 "IDE_top_level.ngc" IDE_top_level.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o IDE_top_level_map.ncd IDE_top_level.ngd IDE_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 IDE_top_level_map.ncd IDE_top_level.ncd IDE_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IDE_top_level.twx IDE_top_level.ncd -o IDE_top_level.twr IDE_top_level.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f IDE_top_level.ut IDE_top_level.ncd 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s250e-vq100-5 "IDE_top_level.ngc" IDE_top_level.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o IDE_top_level_map.ncd IDE_top_level.ngd IDE_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 IDE_top_level_map.ncd IDE_top_level.ncd IDE_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IDE_top_level.twx IDE_top_level.ncd -o IDE_top_level.twr IDE_top_level.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f IDE_top_level.ut IDE_top_level.ncd 
+xst -intstyle ise -ifn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.xst" -ofn "C:/Users/Bailey/Documents/IDE V2/IDEV2/IDE_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s250e-vq100-5 "IDE_top_level.ngc" IDE_top_level.ngd  
+map -intstyle ise -p xc3s250e-vq100-5 -cm area -ir off -pr off -c 100 -o IDE_top_level_map.ncd IDE_top_level.ngd IDE_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 IDE_top_level_map.ncd IDE_top_level.ncd IDE_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml IDE_top_level.twx IDE_top_level.ncd -o IDE_top_level.twr IDE_top_level.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f IDE_top_level.ut IDE_top_level.ncd 
